@@ -5,3 +5,7 @@ dist/
 build/
 .eggs/
 *.egg
+# Internal working document. Never commit.
+TEMPLATE_GUIDE.md
+# Local-only instruction files
+CLAUDE.local.md
