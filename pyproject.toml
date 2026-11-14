@@ -12,7 +12,7 @@ description = "Reserved name — Sortition. by ShadowStrike."
 readme = "README.md"
 license = {text = "Proprietary"}
 authors = [
-    {name = "Strategos", email = "r@strategos.au"}
+    {name = "ShadowStrike", email = "r@strategos.au"}
 ]
 requires-python = ">=3.11"
 classifiers = [
@@ -29,3 +29,7 @@ classifiers = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sortition"]
+
+# Internal files never ship in the sdist, even if the .gitignore guard is missing.
+[tool.hatch.build.targets.sdist]
+exclude = ["TEMPLATE_GUIDE.md", "CLAUDE.md", "CLAUDE.local.md"]
